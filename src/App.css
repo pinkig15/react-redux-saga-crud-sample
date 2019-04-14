@@ -1,32 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  margin: auto auto;
+  padding: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.no-result {
+  height: 100%;
+  font-size: 20px;
+}
+
+.search-inpbx {
+  padding: 10px;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.people-list-container {
+  background-color: #fff;
+}
+
+.users-list {
+  list-style: none;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.users-list li {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+
+li .img-txt-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.users-list li img {
+  height: 60px;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.txt-title {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
 }
